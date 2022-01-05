@@ -9,5 +9,10 @@
 </head>
 <body>
     <h1 class="text-center">Bernardo de Macedo </h1>
+    <?php
+require_once "model/Conexao.php";
+$tecnologias = Conexao::select("tecnologia", "id, nome");
+print_r($tecnologias);
+    ?>
 </body>
 </html>
